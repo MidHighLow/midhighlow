@@ -1,11 +1,11 @@
 // Initialize Firebase
 const firebaseConfig = {
-    apiKey: "AIzaSyCzgrvaRodfuiY1pF6dveXiLDmI0St64qc",
-    authDomain: "macondotest-904af.firebaseapp.com",
-    projectId: "macondotest-904af",
-    storageBucket: "macondotest-904af.appspot.com",
-    messagingSenderId: "853635517373",
-    appId: "1:853635517373:web:f5439d310e3e114ecba0d4"
+    apiKey: "AIzaSyDycjcgGGbcemaU5sUpKi2oqnsKnuX1i64",
+  authDomain: "midhighlow-41e8f.firebaseapp.com",
+  projectId: "midhighlow-41e8f",
+  storageBucket: "midhighlow-41e8f.appspot.com",
+  messagingSenderId: "44217593113",
+  appId: "1:44217593113:web:b171faf2515f864d49a988"
 };
 firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
