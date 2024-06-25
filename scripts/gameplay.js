@@ -346,23 +346,23 @@ function evaluateBet(betType, exactType, drawnCards, wagerAmount, selectedOption
         'High': [10, 12, 13, 14, 15]  // Including face cards as numeric values
     };
    const multiplierGroups = {
-    19.4: [['High', 'High', 'High']],
-    21.8: [['Low', 'High', 'High'], ['Mid', 'High', 'High'], ['High', 'Low', 'High'], ['High', 'Mid', 'High'], ['High', 'High', 'Low'], ['High', 'High', 'Mid']],
-    25.9: [['Low', 'Mid', 'High'], ['Low', 'High', 'Mid'], ['Mid', 'Low', 'High'], ['Mid', 'High', 'Low'], ['High', 'Low', 'Mid'], ['High', 'Mid', 'Low']],
-    27.6: [['Low', 'Low', 'High'], ['Low', 'High', 'Low'], ['Mid', 'Mid', 'High'], ['Mid', 'High', 'Mid'], ['High', 'Low', 'Low'], ['High', 'Mid', 'Mid']],
-    34.5: [['Low', 'Low', 'Mid'], ['Low', 'Mid', 'Low'], ['Low', 'Mid', 'Mid'], ['Mid', 'Low', 'Low'], ['Mid', 'Low', 'Mid'], ['Mid', 'Mid', 'Low']],
-    39.5: [['Low', 'Low', 'Low'], ['Mid', 'Mid', 'Mid']],
-    55.9: [['High', 'High', 'High', 'High']],
-    59.4: [['Low', 'High', 'High', 'High'], ['Mid', 'High', 'High', 'High'], ['High', 'Low', 'High', 'High'], ['High', 'Mid', 'High', 'High'], ['High', 'High', 'Low', 'High'], ['High', 'High', 'Mid', 'High'], ['High', 'High', 'High', 'Low'], ['High', 'High', 'High', 'Mid']],
-    66.8: [['Low', 'Mid', 'High', 'High'], ['Low', 'High', 'Mid', 'High'], ['Low', 'High', 'High', 'Mid'], ['Mid', 'Low', 'High', 'High'], ['Mid', 'High', 'Low', 'High'], ['Mid', 'High', 'High', 'Low'], ['High', 'Low', 'Mid', 'High'], ['High', 'Low', 'High', 'Mid'], ['High', 'Mid', 'Low', 'High'], ['High', 'Mid', 'High', 'Low'], ['High', 'High', 'Low', 'Mid'], ['High', 'High', 'Mid', 'Low']],
-    71.2: [['Low', 'Low', 'High', 'High'], ['Low', 'High', 'Low', 'High'], ['Low', 'High', 'High', 'Low'], ['Mid', 'Mid', 'High', 'High'], ['Mid', 'High', 'Mid', 'High'], ['Mid', 'High', 'High', 'Mid'], ['High', 'Low', 'Low', 'High'], ['High', 'Low', 'High', 'Low'], ['High', 'Mid', 'Mid', 'High'], ['High', 'Mid', 'High', 'Mid'], ['High', 'High', 'Low', 'Low'], ['High', 'High', 'Mid', 'Mid']],
-    84.6: [['Low', 'Low', 'Mid', 'High'], ['Low', 'Low', 'High', 'Mid'], ['Low', 'Mid', 'Low', 'High'], ['Low', 'Mid', 'Mid', 'High'], ['Low', 'Mid', 'High', 'Low'], ['Low', 'Mid', 'High', 'Mid'], ['Low', 'High', 'Low', 'Mid'], ['Low', 'High', 'Mid', 'Low'], ['Low', 'High', 'Mid', 'Mid'], ['Mid', 'Low', 'Low', 'High'], ['Mid', 'Low', 'Mid', 'High'], ['Mid', 'Low', 'High', 'Low'], ['Mid', 'Low', 'High', 'Mid'], ['Mid', 'Mid', 'Low', 'High'], ['Mid', 'Mid', 'High', 'Low'], ['Mid', 'High', 'Low', 'Low'], ['Mid', 'High', 'Low', 'Mid'], ['Mid', 'High', 'Mid', 'Low'], ['High', 'Low', 'Low', 'Mid'], ['High', 'Low', 'Mid', 'Low'], ['High', 'Low', 'Mid', 'Mid'], ['High', 'Mid', 'Low', 'Low'], ['High', 'Mid', 'Low', 'Mid'], ['High', 'Mid', 'Mid', 'Low']],
-    96.7: [['Low', 'Low', 'Low', 'High'], ['Low', 'Low', 'High', 'Low'], ['Low', 'High', 'Low', 'Low'], ['Mid', 'Mid', 'Mid', 'High'], ['Mid', 'Mid', 'High', 'Mid'], ['Mid', 'High', 'Mid', 'Mid'], ['High', 'Low', 'Low', 'Low'], ['High', 'Mid', 'Mid', 'Mid']],
-    112.8: [['Low', 'Low', 'Mid', 'Mid'], ['Low', 'Mid', 'Low', 'Mid'], ['Low', 'Mid', 'Mid', 'Low'], ['Mid', 'Low', 'Low', 'Mid'], ['Mid', 'Low', 'Mid', 'Low'], ['Mid', 'Mid', 'Low', 'Low']],
-    120.9: [['Low', 'Low', 'Low', 'Mid'], ['Low', 'Low', 'Mid', 'Low'], ['Low', 'Mid', 'Low', 'Low'], ['Low', 'Mid', 'Mid', 'Mid'], ['Mid', 'Low', 'Low', 'Low'], ['Mid', 'Low', 'Mid', 'Mid'], ['Mid', 'Mid', 'Low', 'Mid'], ['Mid', 'Mid', 'Mid', 'Low']],
-    148.7: [['Low', 'Low', 'Low', 'Low'], ['Mid', 'Mid', 'Mid', 'Mid']],
+    17: [['High', 'High', 'High']],
+19: [['Low', 'High', 'High'], ['Mid', 'High', 'High'], ['High', 'Low', 'High'], ['High', 'Mid', 'High'], ['High', 'High', 'Low'], ['High', 'High', 'Mid']],
+23: [['Low', 'Mid', 'High'], ['Low', 'High', 'Mid'], ['Mid', 'Low', 'High'], ['Mid', 'High', 'Low'], ['High', 'Low', 'Mid'], ['High', 'Mid', 'Low']],
+25: [['Low', 'Low', 'High'], ['Low', 'High', 'Low'], ['Mid', 'Mid', 'High'], ['Mid', 'High', 'Mid'], ['High', 'Low', 'Low'], ['High', 'Mid', 'Mid']],
+31: [['Low', 'Low', 'Mid'], ['Low', 'Mid', 'Low'], ['Low', 'Mid', 'Mid'], ['Mid', 'Low', 'Low'], ['Mid', 'Low', 'Mid'], ['Mid', 'Mid', 'Low']],
+35: [['Low', 'Low', 'Low'], ['Mid', 'Mid', 'Mid']],
+50: [['High', 'High', 'High', 'High']],
+54: [['Low', 'High', 'High', 'High'], ['Mid', 'High', 'High', 'High'], ['High', 'Low', 'High', 'High'], ['High', 'Mid', 'High', 'High'], ['High', 'High', 'Low', 'High'], ['High', 'High', 'Mid', 'High'], ['High', 'High', 'High', 'Low'], ['High', 'High', 'High', 'Mid']],
+60: [['Low', 'Mid', 'High', 'High'], ['Low', 'High', 'Mid', 'High'], ['Low', 'High', 'High', 'Mid'], ['Mid', 'Low', 'High', 'High'], ['Mid', 'High', 'Low', 'High'], ['Mid', 'High', 'High', 'Low'], ['High', 'Low', 'Mid', 'High'], ['High', 'Low', 'High', 'Mid'], ['High', 'Mid', 'Low', 'High'], ['High', 'Mid', 'High', 'Low'], ['High', 'High', 'Low', 'Mid'], ['High', 'High', 'Mid', 'Low']],
+65: [['Low', 'Low', 'High', 'High'], ['Low', 'High', 'Low', 'High'], ['Low', 'High', 'High', 'Low'], ['Mid', 'Mid', 'High', 'High'], ['Mid', 'High', 'Mid', 'High'], ['Mid', 'High', 'High', 'Mid'], ['High', 'Low', 'Low', 'High'], ['High', 'Low', 'High', 'Low'], ['High', 'Mid', 'Mid', 'High'], ['High', 'Mid', 'High', 'Mid'], ['High', 'High', 'Low', 'Low'], ['High', 'High', 'Mid', 'Mid']],
+77: [['Low', 'Low', 'Mid', 'High'], ['Low', 'Low', 'High', 'Mid'], ['Low', 'Mid', 'Low', 'High'], ['Low', 'Mid', 'Mid', 'High'], ['Low', 'Mid', 'High', 'Low'], ['Low', 'Mid', 'High', 'Mid'], ['Low', 'High', 'Low', 'Mid'], ['Low', 'High', 'Mid', 'Low'], ['Low', 'High', 'Mid', 'Mid'], ['Mid', 'Low', 'Low', 'High'], ['Mid', 'Low', 'Mid', 'High'], ['Mid', 'Low', 'High', 'Low'], ['Mid', 'Low', 'High', 'Mid'], ['Mid', 'Mid', 'Low', 'High'], ['Mid', 'Mid', 'High', 'Low'], ['Mid', 'High', 'Low', 'Low'], ['Mid', 'High', 'Low', 'Mid'], ['Mid', 'High', 'Mid', 'Low'], ['High', 'Low', 'Low', 'Mid'], ['High', 'Low', 'Mid', 'Low'], ['High', 'Low', 'Mid', 'Mid'], ['High', 'Mid', 'Low', 'Low'], ['High', 'Mid', 'Low', 'Mid'], ['High', 'Mid', 'Mid', 'Low']],
+88: [['Low', 'Low', 'Low', 'High'], ['Low', 'Low', 'High', 'Low'], ['Low', 'High', 'Low', 'Low'], ['Mid', 'Mid', 'Mid', 'High'], ['Mid', 'Mid', 'High', 'Mid'], ['Mid', 'High', 'Mid', 'Mid'], ['High', 'Low', 'Low', 'Low'], ['High', 'Mid', 'Mid', 'Mid']],
+103: [['Low', 'Low', 'Mid', 'Mid'], ['Low', 'Mid', 'Low', 'Mid'], ['Low', 'Mid', 'Mid', 'Low'], ['Mid', 'Low', 'Low', 'Mid'], ['Mid', 'Low', 'Mid', 'Low'], ['Mid', 'Mid', 'Low', 'Low']],
+111: [['Low', 'Low', 'Low', 'Mid'], ['Low', 'Low', 'Mid', 'Low'], ['Low', 'Mid', 'Low', 'Low'], ['Low', 'Mid', 'Mid', 'Mid'], ['Mid', 'Low', 'Low', 'Low'], ['Mid', 'Low', 'Mid', 'Mid'], ['Mid', 'Mid', 'Low', 'Mid'], ['Mid', 'Mid', 'Mid', 'Low']],
+137: [['Low', 'Low', 'Low', 'Low'], ['Mid', 'Mid', 'Mid', 'Mid']],
 };
-        console.log('Selected option for macondo bet:', selectedOption);
+        console.log('Selected option for this bet:', selectedOption);
     if (!selectedOption) {
         console.error('Invalid selected option:', selectedOption);
         return { win: false, multiplier: 0, winnings: 0 };
