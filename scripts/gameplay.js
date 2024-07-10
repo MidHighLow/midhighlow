@@ -208,7 +208,9 @@ document.querySelectorAll('.option button').forEach(button => {
         if (wagerAmount > currentBalance) {
             alert('Insufficient balance.');
             return;
-        } else if ((currentBalance >= 500 && wagerAmount < 25) || (currentBalance >= 1000 && wagerAmount < 50)) {
+        } else if ((currentBalance >= 250 && wagerAmount < 25) || (currentBalance >= 500 && wagerAmount < 50) || (currentBalance >= 1000 && wagerAmount < 100) 
+                  || (currentBalance >= 2000 && wagerAmount < 200) || (currentBalance >= 3000 && wagerAmount < 300) || (currentBalance >= 4000 && wagerAmount < 400)
+                  || (currentBalance >= 5000 && wagerAmount < 500) || (currentBalance >= 10000 && wagerAmount < 1000)) {
             alert('Insufficient wager amount.');
             return;
         }
