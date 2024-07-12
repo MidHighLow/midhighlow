@@ -186,7 +186,7 @@ document.querySelectorAll('.option button').forEach(button => {
         const optionElementId = betType + 'Options';
         const selectedOption = document.getElementById(optionElementId).value;
         const wagerAmount = parseInt(document.getElementById('wagerAmount').value, 10);
-        if (isNaN(wagerAmount) || wagerAmount < 5) {
+        if (isNaN(wagerAmount) || wagerAmount < 10) {
             alert('Invalid wager amount.');
             return;
         }
